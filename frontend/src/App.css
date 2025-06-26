@@ -1,0 +1,152 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* Common form styles */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Button styles */
+.button-primary {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.button-primary:hover {
+  background-color: #333333;
+}
+
+.button-secondary {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.button-secondary:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* Card styles */
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Table styles */
+.table-container {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
+
+.table th {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.table tr:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Alert styles */
+.alert {
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.alert-error {
+  background-color: #FFFFFF;
+  border: 1px solid #FF0000;
+  color: #FF0000;
+}
+
+.alert-success {
+  background-color: #FFFFFF;
+  border: 1px solid #00FF00;
+  color: #008000;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  border: 2px solid #000000;
+  border-top: 2px solid #FFFFFF;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 
