@@ -1,4 +1,3 @@
-Got it! Here's a **well-formatted README written in simple English**, using paragraphs instead of bullet points but still organized clearly:
 
 ---
 
